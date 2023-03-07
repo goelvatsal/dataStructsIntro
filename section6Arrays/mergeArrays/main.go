@@ -1,4 +1,4 @@
-package mergeArrays
+package merge_arrays
 
 import "sort"
 
