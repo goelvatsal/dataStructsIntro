@@ -1,4 +1,4 @@
-package rev_str
+package revstr
 
 func revStr(str string) string {
 	slc := []rune(str)

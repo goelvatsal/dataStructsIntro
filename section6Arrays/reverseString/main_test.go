@@ -1,4 +1,4 @@
-package rev_str
+package revstr
 
 import (
 	"github.com/stretchr/testify/assert"
