@@ -1,7 +1,5 @@
 package merge_arrays
 
-import "sort"
-
 func mergeArrays(slc1, slc2 []int) []int {
 	var mergeSlice []int
 
@@ -13,6 +11,17 @@ func mergeArrays(slc1, slc2 []int) []int {
 		mergeSlice = append(mergeSlice, v)
 	}
 
-	sort.Ints(mergeSlice)
+	for i := 0; i < len(mergeSlice); i++ {
+		if i == len(mergeSlice)-1 {
+			break
+		}
+
+		if mergeSlice[i] > mergeSlice[i+1] {
+			mergeSlice[i], mergeSlice[i+1] = mergeSlice[i+1], mergeSlice[i]
+		} else {
+			continue
+		}
+	}
+
 	return mergeSlice
 }
