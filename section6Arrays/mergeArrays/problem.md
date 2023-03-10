@@ -1,1 +1,1 @@
-Merge two int slices into one int slice, and sort the int slice.
+Merge two sorted int slices into one sorted int slice.
