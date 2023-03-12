@@ -1,0 +1,1 @@
+Find the first recurring character in a int slice.
