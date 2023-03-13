@@ -1,5 +1,5 @@
 package recurringchar
 
-type recurringChar interface {
+type RecurringChar interface {
 	findRecurringChar(input1 []int) int
 }

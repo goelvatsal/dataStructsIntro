@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	impls = make([]recurringChar, 0)
+	impls = make([]RecurringChar, 0)
 )
 
 func TestMergeArrays(t *testing.T) {
@@ -45,5 +45,9 @@ func getTestData() []ArrayTester {
 	return []ArrayTester{
 		{[]int{2, 5, 1, 2, 3, 5, 1, 2, 4}, 2},
 		{[]int{2, 1, 1, 2, 3, 5, 1, 2, 4}, 1},
+		{[]int{8, 3, 6, 7, 4, 9, 8, 2, 5}, 8},
+		{[]int{6, 4, 3, 2, 7, 2, 7, 4, 6}, 2},
+		{[]int{2, 3, 4, 5}, -1},
+		{[]int{7, 2, 3, 9}, -1},
 	}
 }
